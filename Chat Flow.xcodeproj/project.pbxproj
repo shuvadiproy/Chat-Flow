@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541BD3022B6544CF0030DF14 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 541BD3012B6544CF0030DF14 /* FirebaseAuth */; };
+		541BD3042B6546FC0030DF14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 541BD3032B6546FC0030DF14 /* GoogleService-Info.plist */; };
+		541BD3062B6548FC0030DF14 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 541BD3052B6548FC0030DF14 /* FirebaseFirestore */; };
 		542822E72B640DCF00E66579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542822E62B640DCF00E66579 /* AppDelegate.swift */; };
 		542822E92B640DCF00E66579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542822E82B640DCF00E66579 /* SceneDelegate.swift */; };
 		542822EB2B640DCF00E66579 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542822EA2B640DCF00E66579 /* WelcomeViewController.swift */; };
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		541BD3032B6546FC0030DF14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		542822E32B640DCF00E66579 /* Chat Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542822E62B640DCF00E66579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542822E82B640DCF00E66579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				826F2636CEEE09FD76E942E4 /* Pods_Chat_Flow.framework in Frameworks */,
+				541BD3022B6544CF0030DF14 /* FirebaseAuth in Frameworks */,
+				541BD3062B6548FC0030DF14 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +125,7 @@
 				542822EF2B640DD100E66579 /* Assets.xcassets */,
 				542822F12B640DD100E66579 /* LaunchScreen.storyboard */,
 				542822F42B640DD100E66579 /* Info.plist */,
+				541BD3032B6546FC0030DF14 /* GoogleService-Info.plist */,
 			);
 			path = "Chat-Flow";
 			sourceTree = "<group>";
@@ -193,6 +200,10 @@
 			dependencies = (
 			);
 			name = "Chat Flow";
+			packageProductDependencies = (
+				541BD3012B6544CF0030DF14 /* FirebaseAuth */,
+				541BD3052B6548FC0030DF14 /* FirebaseFirestore */,
+			);
 			productName = "Chat-Flow";
 			productReference = 542822E32B640DCF00E66579 /* Chat Flow.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +276,9 @@
 				Base,
 			);
 			mainGroup = 542822DA2B640DCF00E66579;
+			packageReferences = (
+				541BD3002B6544CF0030DF14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 542822E42B640DCF00E66579 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				542822F32B640DD100E66579 /* LaunchScreen.storyboard in Resources */,
+				541BD3042B6546FC0030DF14 /* GoogleService-Info.plist in Resources */,
 				542822F02B640DD100E66579 /* Assets.xcassets in Resources */,
 				542822EE2B640DCF00E66579 /* Main.storyboard in Resources */,
 			);
@@ -523,6 +538,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Chat-Flow/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Chat Flow";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -552,6 +569,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Chat-Flow/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Chat Flow";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -683,6 +702,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		541BD3002B6544CF0030DF14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		541BD3012B6544CF0030DF14 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 541BD3002B6544CF0030DF14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		541BD3052B6548FC0030DF14 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 541BD3002B6544CF0030DF14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 542822DB2B640DCF00E66579 /* Project object */;
 }
