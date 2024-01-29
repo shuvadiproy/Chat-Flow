@@ -150,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-w0-qI4">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="roy@3141" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9U-w0-qI4">
                                 <rect key="frame" x="10" y="206" width="373" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="602-Xe-cby"/>
@@ -169,7 +169,7 @@
                                     <action selector="loginPressed:" destination="dGr-4I-sCS" eventType="touchUpInside" id="dGZ-oR-FbI"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7w-zF-aJk">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="shuvadiproy10@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7w-zF-aJk">
                                 <rect key="frame" x="10" y="156" width="373" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Wp3-F9-AOG"/>
@@ -203,7 +203,7 @@
             </objects>
             <point key="canvasLocation" x="941.22137404580144" y="503.52112676056339"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--💬ChatFlow-->
         <scene sceneID="83z-gr-Hup">
             <objects>
                 <viewController id="ngY-02-uj4" customClass="ChatViewController" customModule="Chat_Flow" customModuleProvider="target" sceneMemberID="viewController">
@@ -211,24 +211,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DJY-PV-fyF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DJY-PV-fyF">
                                 <rect key="frame" x="0.0" y="103" width="393" height="645"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="G56-No-mGl">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="51.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G56-No-mGl" id="Qqa-yr-Qbk">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="51.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-Os-j29" userLabel="mbView">
                                 <rect key="frame" x="0.0" y="748" width="393" height="70"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9d-ng-0xV">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9d-ng-0xV">
                                         <rect key="frame" x="15" y="10" width="312.33333333333331" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Aox-qs-Ou3"/>
@@ -272,7 +262,7 @@
                             <constraint firstItem="DJY-PV-fyF" firstAttribute="top" secondItem="szN-OS-Je2" secondAttribute="top" id="pQG-Oi-Zaz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sdK-id-tSj">
+                    <navigationItem key="navigationItem" title="💬ChatFlow" id="sdK-id-tSj">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="ej2-NC-c72">
                             <connections>
                                 <action selector="logOutPressed:" destination="ngY-02-uj4" id="v74-Id-k28"/>
@@ -296,6 +286,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b09-6t-lMp">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="BrandBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -325,7 +321,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

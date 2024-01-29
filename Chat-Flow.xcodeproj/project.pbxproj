@@ -10,6 +10,7 @@
 		541BD3022B6544CF0030DF14 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 541BD3012B6544CF0030DF14 /* FirebaseAuth */; };
 		541BD3042B6546FC0030DF14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 541BD3032B6546FC0030DF14 /* GoogleService-Info.plist */; };
 		541BD3062B6548FC0030DF14 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 541BD3052B6548FC0030DF14 /* FirebaseFirestore */; };
+		541BD3082B6594BF0030DF14 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541BD3072B6594BF0030DF14 /* Constants.swift */; };
 		542822E72B640DCF00E66579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542822E62B640DCF00E66579 /* AppDelegate.swift */; };
 		542822E92B640DCF00E66579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542822E82B640DCF00E66579 /* SceneDelegate.swift */; };
 		542822EB2B640DCF00E66579 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542822EA2B640DCF00E66579 /* WelcomeViewController.swift */; };
@@ -22,6 +23,10 @@
 		542823192B643EEC00E66579 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542823182B643EEC00E66579 /* RegisterViewController.swift */; };
 		5428231B2B643F0200E66579 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428231A2B643F0200E66579 /* LoginViewController.swift */; };
 		5428231D2B643F1400E66579 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428231C2B643F1400E66579 /* ChatViewController.swift */; };
+		544825142B662E0200AB8400 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544825132B662E0200AB8400 /* Message.swift */; };
+		544825172B6676C700AB8400 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544825152B6676C700AB8400 /* MessageCell.swift */; };
+		544825182B6676C700AB8400 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544825162B6676C700AB8400 /* MessageCell.xib */; };
+		5448251B2B66EAD500AB8400 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5448251A2B66EAD500AB8400 /* IQKeyboardManagerSwift */; };
 		826F2636CEEE09FD76E942E4 /* Pods_Chat_Flow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6CB4A738F66D35B4E93159 /* Pods_Chat_Flow.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +49,8 @@
 
 /* Begin PBXFileReference section */
 		541BD3032B6546FC0030DF14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		542822E32B640DCF00E66579 /* Chat Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		541BD3072B6594BF0030DF14 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		542822E32B640DCF00E66579 /* Chat-Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat-Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542822E62B640DCF00E66579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542822E82B640DCF00E66579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		542822EA2B640DCF00E66579 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -52,14 +58,17 @@
 		542822EF2B640DD100E66579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542822F22B640DD100E66579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542822F42B640DD100E66579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		542822F92B640DD200E66579 /* Chat FlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat FlowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		542822F92B640DD200E66579 /* Chat-FlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat-FlowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542822FD2B640DD200E66579 /* Chat_FlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_FlowTests.swift; sourceTree = "<group>"; };
-		542823032B640DD200E66579 /* Chat FlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat FlowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		542823032B640DD200E66579 /* Chat-FlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat-FlowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542823072B640DD200E66579 /* Chat_FlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_FlowUITests.swift; sourceTree = "<group>"; };
 		542823092B640DD200E66579 /* Chat_FlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_FlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		542823182B643EEC00E66579 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5428231A2B643F0200E66579 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5428231C2B643F1400E66579 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		544825132B662E0200AB8400 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		544825152B6676C700AB8400 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		544825162B6676C700AB8400 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		AF0812816E1D78B640B57879 /* Pods-Chat-Flow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Flow.debug.xcconfig"; path = "Target Support Files/Pods-Chat-Flow/Pods-Chat-Flow.debug.xcconfig"; sourceTree = "<group>"; };
 		E315ACC4BA3DCC5DAFCFC6F1 /* Pods-Chat-Flow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Flow.release.xcconfig"; path = "Target Support Files/Pods-Chat-Flow/Pods-Chat-Flow.release.xcconfig"; sourceTree = "<group>"; };
 		FC6CB4A738F66D35B4E93159 /* Pods_Chat_Flow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_Flow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				826F2636CEEE09FD76E942E4 /* Pods_Chat_Flow.framework in Frameworks */,
+				5448251B2B66EAD500AB8400 /* IQKeyboardManagerSwift in Frameworks */,
 				541BD3022B6544CF0030DF14 /* FirebaseAuth in Frameworks */,
 				541BD3062B6548FC0030DF14 /* FirebaseFirestore in Frameworks */,
 			);
@@ -108,9 +118,9 @@
 		542822E42B640DCF00E66579 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				542822E32B640DCF00E66579 /* Chat Flow.app */,
-				542822F92B640DD200E66579 /* Chat FlowTests.xctest */,
-				542823032B640DD200E66579 /* Chat FlowUITests.xctest */,
+				542822E32B640DCF00E66579 /* Chat-Flow.app */,
+				542822F92B640DD200E66579 /* Chat-FlowTests.xctest */,
+				542823032B640DD200E66579 /* Chat-FlowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 		542822E52B640DCF00E66579 /* Chat-Flow */ = {
 			isa = PBXGroup;
 			children = (
+				544825122B662DD800AB8400 /* Models */,
 				542823172B640EF900E66579 /* Controllers */,
 				542823162B640EEF00E66579 /* Views */,
 				542822E62B640DCF00E66579 /* AppDelegate.swift */,
@@ -126,6 +137,7 @@
 				542822F12B640DD100E66579 /* LaunchScreen.storyboard */,
 				542822F42B640DD100E66579 /* Info.plist */,
 				541BD3032B6546FC0030DF14 /* GoogleService-Info.plist */,
+				541BD3072B6594BF0030DF14 /* Constants.swift */,
 			);
 			path = "Chat-Flow";
 			sourceTree = "<group>";
@@ -151,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				542822EC2B640DCF00E66579 /* Main.storyboard */,
+				544825152B6676C700AB8400 /* MessageCell.swift */,
+				544825162B6676C700AB8400 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +178,14 @@
 				5428231C2B643F1400E66579 /* ChatViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		544825122B662DD800AB8400 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				544825132B662E0200AB8400 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EF351FFF2C82D4B5CB27FA05 /* Pods */ = {
@@ -186,9 +208,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		542822E22B640DCF00E66579 /* Chat Flow */ = {
+		542822E22B640DCF00E66579 /* Chat-Flow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5428230D2B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat Flow" */;
+			buildConfigurationList = 5428230D2B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat-Flow" */;
 			buildPhases = (
 				C5E25CD50A7F1EF49A2BC8EF /* [CP] Check Pods Manifest.lock */,
 				542822DF2B640DCF00E66579 /* Sources */,
@@ -199,18 +221,19 @@
 			);
 			dependencies = (
 			);
-			name = "Chat Flow";
+			name = "Chat-Flow";
 			packageProductDependencies = (
 				541BD3012B6544CF0030DF14 /* FirebaseAuth */,
 				541BD3052B6548FC0030DF14 /* FirebaseFirestore */,
+				5448251A2B66EAD500AB8400 /* IQKeyboardManagerSwift */,
 			);
 			productName = "Chat-Flow";
-			productReference = 542822E32B640DCF00E66579 /* Chat Flow.app */;
+			productReference = 542822E32B640DCF00E66579 /* Chat-Flow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		542822F82B640DD200E66579 /* Chat FlowTests */ = {
+		542822F82B640DD200E66579 /* Chat-FlowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 542823102B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat FlowTests" */;
+			buildConfigurationList = 542823102B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat-FlowTests" */;
 			buildPhases = (
 				542822F52B640DD200E66579 /* Sources */,
 				542822F62B640DD200E66579 /* Frameworks */,
@@ -221,14 +244,14 @@
 			dependencies = (
 				542822FB2B640DD200E66579 /* PBXTargetDependency */,
 			);
-			name = "Chat FlowTests";
+			name = "Chat-FlowTests";
 			productName = "Chat-FlowTests";
-			productReference = 542822F92B640DD200E66579 /* Chat FlowTests.xctest */;
+			productReference = 542822F92B640DD200E66579 /* Chat-FlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		542823022B640DD200E66579 /* Chat FlowUITests */ = {
+		542823022B640DD200E66579 /* Chat-FlowUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 542823132B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat FlowUITests" */;
+			buildConfigurationList = 542823132B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat-FlowUITests" */;
 			buildPhases = (
 				542822FF2B640DD200E66579 /* Sources */,
 				542823002B640DD200E66579 /* Frameworks */,
@@ -239,9 +262,9 @@
 			dependencies = (
 				542823052B640DD200E66579 /* PBXTargetDependency */,
 			);
-			name = "Chat FlowUITests";
+			name = "Chat-FlowUITests";
 			productName = "Chat-FlowUITests";
-			productReference = 542823032B640DD200E66579 /* Chat FlowUITests.xctest */;
+			productReference = 542823032B640DD200E66579 /* Chat-FlowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +290,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 542822DE2B640DCF00E66579 /* Build configuration list for PBXProject "Chat Flow" */;
+			buildConfigurationList = 542822DE2B640DCF00E66579 /* Build configuration list for PBXProject "Chat-Flow" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -278,14 +301,15 @@
 			mainGroup = 542822DA2B640DCF00E66579;
 			packageReferences = (
 				541BD3002B6544CF0030DF14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				544825192B66EAD400AB8400 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 542822E42B640DCF00E66579 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				542822E22B640DCF00E66579 /* Chat Flow */,
-				542822F82B640DD200E66579 /* Chat FlowTests */,
-				542823022B640DD200E66579 /* Chat FlowUITests */,
+				542822E22B640DCF00E66579 /* Chat-Flow */,
+				542822F82B640DD200E66579 /* Chat-FlowTests */,
+				542823022B640DD200E66579 /* Chat-FlowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544825182B6676C700AB8400 /* MessageCell.xib in Resources */,
 				542822F32B640DD100E66579 /* LaunchScreen.storyboard in Resources */,
 				541BD3042B6546FC0030DF14 /* GoogleService-Info.plist in Resources */,
 				542822F02B640DD100E66579 /* Assets.xcassets in Resources */,
@@ -352,8 +377,11 @@
 				542822E72B640DCF00E66579 /* AppDelegate.swift in Sources */,
 				542822E92B640DCF00E66579 /* SceneDelegate.swift in Sources */,
 				5428231B2B643F0200E66579 /* LoginViewController.swift in Sources */,
+				541BD3082B6594BF0030DF14 /* Constants.swift in Sources */,
+				544825142B662E0200AB8400 /* Message.swift in Sources */,
 				5428231D2B643F1400E66579 /* ChatViewController.swift in Sources */,
 				542823192B643EEC00E66579 /* RegisterViewController.swift in Sources */,
+				544825172B6676C700AB8400 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,12 +407,12 @@
 /* Begin PBXTargetDependency section */
 		542822FB2B640DD200E66579 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 542822E22B640DCF00E66579 /* Chat Flow */;
+			target = 542822E22B640DCF00E66579 /* Chat-Flow */;
 			targetProxy = 542822FA2B640DD200E66579 /* PBXContainerItemProxy */;
 		};
 		542823052B640DD200E66579 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 542822E22B640DCF00E66579 /* Chat Flow */;
+			target = 542822E22B640DCF00E66579 /* Chat-Flow */;
 			targetProxy = 542823042B640DD200E66579 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -605,7 +633,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat Flow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chat Flow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat-Flow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chat-Flow";
 			};
 			name = Debug;
 		};
@@ -624,7 +652,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat Flow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chat Flow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chat-Flow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chat-Flow";
 			};
 			name = Release;
 		};
@@ -665,7 +693,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		542822DE2B640DCF00E66579 /* Build configuration list for PBXProject "Chat Flow" */ = {
+		542822DE2B640DCF00E66579 /* Build configuration list for PBXProject "Chat-Flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5428230B2B640DD200E66579 /* Debug */,
@@ -674,7 +702,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5428230D2B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat Flow" */ = {
+		5428230D2B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat-Flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5428230E2B640DD200E66579 /* Debug */,
@@ -683,7 +711,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		542823102B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat FlowTests" */ = {
+		542823102B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat-FlowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				542823112B640DD200E66579 /* Debug */,
@@ -692,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		542823132B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat FlowUITests" */ = {
+		542823132B640DD200E66579 /* Build configuration list for PBXNativeTarget "Chat-FlowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				542823142B640DD200E66579 /* Debug */,
@@ -712,6 +740,14 @@
 				minimumVersion = 10.20.0;
 			};
 		};
+		544825192B66EAD400AB8400 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -724,6 +760,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 541BD3002B6544CF0030DF14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		5448251A2B66EAD500AB8400 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 544825192B66EAD400AB8400 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
